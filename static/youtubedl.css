@@ -1,0 +1,115 @@
+html {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+}
+
+@media(max-width: 360px){
+  html, input {
+    font-size: 133%;
+  }
+  #parse {
+    width: 90%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#container {
+  width: 100%;
+  position: absolute;
+  top: 30%;
+  padding-bottom: 20px;
+}
+
+header h1 {
+  text-align: center;
+}
+
+#parse {
+  width: 66%;
+  margin: auto;
+  display: flex;
+}
+#parse input[type=text] {
+  width: 50%;
+  flex-grow: 1;
+}
+#parse input[type=submit] {
+  min-width: 20%;
+}
+
+@media(max-width: 360px){
+  #parse {
+    width: 90%;
+  }
+}
+
+h2 {
+  text-transform:capitalize;
+}
+
+#info_container {
+  margin: auto;
+  width: 90%;
+}
+
+#video_info h3 {
+  display: inline;
+  text-transform:capitalize;
+}
+
+#video_info p {
+  word-wrap: break-word;
+}
+
+.dl_options {
+  width: 50%;
+  float: left;
+  padding: 5px;
+}
+
+.dl_options label {
+  font-family: monospace;
+  font-size: 125%;
+}
+
+@media(max-width: 360px){
+  .dl_options label {
+    font-size: 100%;
+  }
+}
+
+.dl_options label {
+  width: 100%;
+  float: left;
+  padding: 2px;
+}
+
+.dl_options label:nth-child(even) {
+  background-color: #FDD;
+}
+
+.dl_options label:nth-child(odd) {
+  background-color: #FEE;
+}
+
+.dl_options input {
+  margin: 3px;
+}
+
+#download {
+  width: 100%;
+  text-align: center;
+}
+
+#download button {
+  width: 100%
+}
+
+#download progress {
+  width: 100%;
+}
